@@ -1,0 +1,10 @@
+﻿  Lab_02.cpp
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(10,10): warning C4305: =: усечение из "double" в "float"
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(11,11): warning C4305: =: усечение из "double" в "float"
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(12,10): warning C4305: =: усечение из "double" в "float"
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(16,20): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(18,14): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(31,9): warning C4244: return: преобразование "float" в "int", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(39,16): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Project1_in_OOP_Lab_2\Lab_02.cpp(39,13): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Project1_in_OOP_Lab_2.vcxproj -> D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_2\Debug\Project1_in_OOP_Lab_2.exe

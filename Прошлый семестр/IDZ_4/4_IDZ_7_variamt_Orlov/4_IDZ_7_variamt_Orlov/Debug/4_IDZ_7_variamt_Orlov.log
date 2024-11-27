@@ -1,0 +1,6 @@
+﻿  Lol_04_2.cpp
+D:\Рабочий стол\Учёба 2021\Программирование\ООП\Практика\4_IDZ_7_variamt_Orlov\4_IDZ_7_variamt_Orlov\Lol_04_2.cpp(23,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\Рабочий стол\Учёба 2021\Программирование\ООП\Практика\4_IDZ_7_variamt_Orlov\4_IDZ_7_variamt_Orlov\Lol_04_2.cpp(25,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  lol_04.cpp
+  Создание кода...
+  4_IDZ_7_variamt_Orlov.vcxproj -> D:\Рабочий стол\Учёба 2021\Программирование\ООП\Практика\4_IDZ_7_variamt_Orlov\Debug\4_IDZ_7_variamt_Orlov.exe

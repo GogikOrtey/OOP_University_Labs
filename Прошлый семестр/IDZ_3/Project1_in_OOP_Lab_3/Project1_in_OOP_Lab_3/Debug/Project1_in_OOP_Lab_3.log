@@ -1,0 +1,8 @@
+﻿  Lab_03.cpp
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Project1_in_OOP_Lab_3\Lab_03.cpp(31,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Project1_in_OOP_Lab_3\Lab_03.cpp(44,18): warning C4305: инициализация: усечение из "double" в "float"
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Project1_in_OOP_Lab_3\Lab_03.cpp(77,36): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Project1_in_OOP_Lab_3\Lab_03.cpp(77,56): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Project1_in_OOP_Lab_3\Lab_03.cpp(72,8): warning C4101: a: неиспользованная локальная переменная
+D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Project1_in_OOP_Lab_3\Lab_03.cpp(72,11): warning C4101: b: неиспользованная локальная переменная
+  Project1_in_OOP_Lab_3.vcxproj -> D:\Рабочий стол\Программирование\ООП\Практика\Новая папка\Project1_in_OOP_Lab_3\Debug\Project1_in_OOP_Lab_3.exe
