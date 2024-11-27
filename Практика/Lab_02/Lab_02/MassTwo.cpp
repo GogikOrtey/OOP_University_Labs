@@ -56,7 +56,7 @@ bool MassTwo::operator==(int m2)
 
 MassTwo& MassTwo::operator=(MassTwo& m2)
 {
-	// 2 раза умер, пока не сделал это правильно
+	// 2 СЂР°Р·Р° СѓРјРµСЂ, РїРѕРєР° РЅРµ СЃРґРµР»Р°Р» СЌС‚Рѕ РїСЂР°РІРёР»СЊРЅРѕ
 
 	this->a = m2.a;
 	this->b = m2.b;

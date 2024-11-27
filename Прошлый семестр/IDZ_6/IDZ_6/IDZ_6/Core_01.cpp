@@ -15,7 +15,7 @@ struct node {
 	struct node* right;
 };
 
-// Создание нового узла
+// РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ СѓР·Р»Р°
 struct node* newNode(int data) {
 	struct node* node = (struct node*)malloc(sizeof(struct node));
 	node->data = data;
@@ -25,7 +25,7 @@ struct node* newNode(int data) {
 	return (node);
 }
 
-// Прямой обход дерева
+// РџСЂСЏРјРѕР№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traversePreOrder(struct node* temp) {
 	if (temp != NULL) {
 		cout << " " << temp->data;
@@ -34,7 +34,7 @@ void traversePreOrder(struct node* temp) {
 	}
 }
 
-// Центрированный обход дерева
+// Р¦РµРЅС‚СЂРёСЂРѕРІР°РЅРЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traverseInOrder(struct node* temp) {
 	if (temp != NULL) {
 		traverseInOrder(temp->left);
@@ -43,7 +43,7 @@ void traverseInOrder(struct node* temp) {
 	}
 }
 
-// Обратный обход дерева
+// РћР±СЂР°С‚РЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traversePostOrder(struct node* temp) {
 	if (temp != NULL) {
 		traversePostOrder(temp->left);
@@ -53,7 +53,7 @@ void traversePostOrder(struct node* temp) {
 }
 
 /*
-int mainf() // f убрать
+int mainf() // f СѓР±СЂР°С‚СЊ
 {
 	setlocale(LC_ALL, "Russian");
 
@@ -62,11 +62,11 @@ int mainf() // f убрать
 	root->right = newNode(3);
 	root->left->left = newNode(4);
 
-	cout << "Прямой обход дерева: ";
+	cout << "РџСЂСЏРјРѕР№ РѕР±С…РѕРґ РґРµСЂРµРІР°: ";
 	traversePreOrder(root);
-	cout << "\nЦентрированный обход дерева: ";
+	cout << "\nР¦РµРЅС‚СЂРёСЂРѕРІР°РЅРЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°: ";
 	traverseInOrder(root);
-	cout << "\nОбратный обход дерева: ";
+	cout << "\nРћР±СЂР°С‚РЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°: ";
 	traversePostOrder(root);
 
 	return 0;
@@ -75,7 +75,7 @@ int mainf() // f убрать
 
 /*
 
-// Двоичное дерево на С++
+// Р”РІРѕРёС‡РЅРѕРµ РґРµСЂРµРІРѕ РЅР° РЎ++
 
 #include <stdlib.h>
 #include <iostream>
@@ -88,7 +88,7 @@ struct node {
   struct node *right;
 };
 
-// Создание нового узла
+// РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ СѓР·Р»Р°
 struct node *newNode(int data) {
   struct node *node = (struct node *)malloc(sizeof(struct node));
   node->data = data;
@@ -98,7 +98,7 @@ struct node *newNode(int data) {
   return (node);
 }
 
-// Прямой обход дерева
+// РџСЂСЏРјРѕР№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traversePreOrder(struct node *temp) {
   if (temp != NULL) {
 	cout << " " << temp->data;
@@ -107,7 +107,7 @@ void traversePreOrder(struct node *temp) {
   }
 }
 
-// Центрированный обход дерева
+// Р¦РµРЅС‚СЂРёСЂРѕРІР°РЅРЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traverseInOrder(struct node *temp) {
   if (temp != NULL) {
 	traverseInOrder(temp->left);
@@ -116,7 +116,7 @@ void traverseInOrder(struct node *temp) {
   }
 }
 
-// Обратный обход дерева
+// РћР±СЂР°С‚РЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traversePostOrder(struct node *temp) {
   if (temp != NULL) {
 	traversePostOrder(temp->left);
@@ -131,11 +131,11 @@ int main() {
   root->right = newNode(3);
   root->left->left = newNode(4);
 
-  cout << "Прямой обход дерева: ";
+  cout << "РџСЂСЏРјРѕР№ РѕР±С…РѕРґ РґРµСЂРµРІР°: ";
   traversePreOrder(root);
-  cout << "\nЦентрированный обход дерева: ";
+  cout << "\nР¦РµРЅС‚СЂРёСЂРѕРІР°РЅРЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°: ";
   traverseInOrder(root);
-  cout << "\nОбратный обход дерева: ";
+  cout << "\nРћР±СЂР°С‚РЅС‹Р№ РѕР±С…РѕРґ РґРµСЂРµРІР°: ";
   traversePostOrder(root);
 }
 
@@ -159,7 +159,7 @@ int main()
 
  Sponsor* OurSponsors = 0;
  int sponsorAmount = 0;
- int YesOrNot = 0; //  продолжить или остановить ввод данных
+ int YesOrNot = 0; //  РїСЂРѕРґРѕР»Р¶РёС‚СЊ РёР»Рё РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РІРІРѕРґ РґР°РЅРЅС‹С…
 
  do
  {
@@ -168,7 +168,7 @@ int main()
 
  sponsorAmount++;
 
- cout << "Продолжить ввод данных (1 - да, 0 - нет): ";
+ cout << "РџСЂРѕРґРѕР»Р¶РёС‚СЊ РІРІРѕРґ РґР°РЅРЅС‹С… (1 - РґР°, 0 - РЅРµС‚): ";
  cin >> YesOrNot;
  cin.get();
  } while (YesOrNot != 0);
@@ -183,7 +183,7 @@ Sponsor* AddStruct(Sponsor* Obj, const int amount)
 {
  if (amount == 0)
  {
- Obj = new Sponsor[amount + 1]; // выделение памяти для первой структуры
+ Obj = new Sponsor[amount + 1]; // РІС‹РґРµР»РµРЅРёРµ РїР°РјСЏС‚Рё РґР»СЏ РїРµСЂРІРѕР№ СЃС‚СЂСѓРєС‚СѓСЂС‹
  }
  else
  {
@@ -191,7 +191,7 @@ Sponsor* AddStruct(Sponsor* Obj, const int amount)
 
  for (int i = 0; i < amount; i++)
  {
- tempObj[i] = Obj[i]; // копируем во временный объект
+ tempObj[i] = Obj[i]; // РєРѕРїРёСЂСѓРµРј РІРѕ РІСЂРµРјРµРЅРЅС‹Р№ РѕР±СЉРµРєС‚
  }
  delete [] Obj;
 
@@ -202,11 +202,11 @@ Sponsor* AddStruct(Sponsor* Obj, const int amount)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 void setData(Sponsor* Obj, const int amount)
 {
- cout << "Фамилия: ";
+ cout << "Р¤Р°РјРёР»РёСЏ: ";
  cin.getline(Obj[amount].surname, 32);
- cout << "Имя: ";
+ cout << "РРјСЏ: ";
  cin.getline(Obj[amount].name, 32);
- cout << "Сумма пожертвования: ";
+ cout << "РЎСѓРјРјР° РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёСЏ: ";
  cin >> Obj[amount].sum;
  cin.get();
  cout << endl;
@@ -215,7 +215,7 @@ void setData(Sponsor* Obj, const int amount)
 void showData(const Sponsor* Obj, const int amount)
 {
  system("cls");
- cout << "№  " << "Фамилия\t" << "Имя\t" << "Сумма\t" << endl;
+ cout << "в„–  " << "Р¤Р°РјРёР»РёСЏ\t" << "РРјСЏ\t" << "РЎСѓРјРјР°\t" << endl;
  cout << "========================================" << endl;
  for (int i = 0; i < amount; i++)
  {

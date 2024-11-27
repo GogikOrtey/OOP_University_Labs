@@ -20,12 +20,12 @@ class stroka
 
 public:
 
-	stroka() // Пустой конструктор
+	stroka() // РџСѓСЃС‚РѕР№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	{
 		adr = NULL;
 	}
 
-	stroka(string str) // Конструктор из строки
+	stroka(string str) // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РёР· СЃС‚СЂРѕРєРё
 	{
 		CurrSimv.prev = NULL;
 		CurrSimv.next = NULL;
@@ -45,12 +45,12 @@ public:
 		strl[0] = simv;
 	}
 
-	void copyStrock() // Конструктор копирования
+	void copyStrock() // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
 	{
 
 	}
 
-	int lengthStrock() // Получение длинны строки
+	int lengthStrock() // РџРѕР»СѓС‡РµРЅРёРµ РґР»РёРЅРЅС‹ СЃС‚СЂРѕРєРё
 	{
 		//while
 	}

@@ -57,9 +57,9 @@ void Binary::Print()
 			num += NumbersB[i] * pow(10, (5 - i - 1));
 		}
 
-		cout << "Äâîè÷íîå ÷èñëî = " << num << endl;
+		cout << "Ð”Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ = " << num << endl;
 	}
-	else cout << "Äâîè÷íîå ÷èñëî = " << num << endl;
+	else cout << "Ð”Ð²Ð¾Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ = " << num << endl;
 }
 
 

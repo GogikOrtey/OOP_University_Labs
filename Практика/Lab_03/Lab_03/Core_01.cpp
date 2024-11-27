@@ -1,4 +1,4 @@
-﻿#include <iostream>
+п»ї#include <iostream>
 #include <cmath>
 #include <time.h>
 #include <string>
@@ -16,7 +16,7 @@ void main()
 	setlocale(LC_ALL, "rus");
 	int const sizeMass = 5;
 
-	// Я сделал разные комбинации этих методов, что бы посмотреть, как они работают друг после друга
+	// РЇ СЃРґРµР»Р°Р» СЂР°Р·РЅС‹Рµ РєРѕРјР±РёРЅР°С†РёРё СЌС‚РёС… РјРµС‚РѕРґРѕРІ, С‡С‚Рѕ Р±С‹ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РѕРЅРё СЂР°Р±РѕС‚Р°СЋС‚ РґСЂСѓРі РїРѕСЃР»Рµ РґСЂСѓРіР°
 
 
 
@@ -56,8 +56,8 @@ void main()
 	NMassChar[0] = '+';
 	NMassChar[1] = '-';
 	NMassChar[2] = 'z';
-	NMassChar[3] = 'я';
-	NMassChar[4] = '§';
+	NMassChar[3] = 'СЏ';
+	NMassChar[4] = 'В§';
 
 	MyClass3.SetMass(NMassChar);
 	MyClass3.Info();

@@ -9,7 +9,7 @@ void mainf()
 }
 
 /*
-struct node // Создаём новую структуру динамического массива, у которого есть data, указатель на следующий и предыдущий элемент
+struct node // РЎРѕР·РґР°С‘Рј РЅРѕРІСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ РґРёРЅР°РјРёС‡РµСЃРєРѕРіРѕ РјР°СЃСЃРёРІР°, Сѓ РєРѕС‚РѕСЂРѕРіРѕ РµСЃС‚СЊ data, СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СЃР»РµРґСѓСЋС‰РёР№ Рё РїСЂРµРґС‹РґСѓС‰РёР№ СЌР»РµРјРµРЅС‚
 {
 	int data;
 	struct node* next;
@@ -17,7 +17,7 @@ struct node // Создаём новую структуру динамического массива, у которого есть da
 };
 
 /*
-struct node* newNode(int data) // Создание нового узла
+struct node* newNode(int data) // РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ СѓР·Р»Р°
 {
 	struct node* node = (struct node*)malloc(sizeof(struct node));
 	node->data = data;
@@ -28,7 +28,7 @@ struct node* newNode(int data) // Создание нового узла
 }
 
 
-struct node* newNodeFirst(int data) // Создание нового узла
+struct node* newNodeFirst(int data) // РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ СѓР·Р»Р°
 {
 	struct node* node = (struct node*)malloc(sizeof(struct node));
 	node->data = data;
@@ -38,17 +38,17 @@ struct node* newNodeFirst(int data) // Создание нового узла
 	return (node);
 }
 
-struct node* newNode(int data, node *nodeLast) // Создание нового узла
+struct node* newNode(int data, node *nodeLast) // РЎРѕР·РґР°РЅРёРµ РЅРѕРІРѕРіРѕ СѓР·Р»Р°
 {
 	struct node* node = (struct node*)malloc(sizeof(struct node));
 	node->data = data;
 
 	node->next = NULL;
-	node->prev = nodeLast; // Создаём новый элемент, и сзади к нему прикрепляем предыдущий
+	node->prev = nodeLast; // РЎРѕР·РґР°С‘Рј РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚, Рё СЃР·Р°РґРё Рє РЅРµРјСѓ РїСЂРёРєСЂРµРїР»СЏРµРј РїСЂРµРґС‹РґСѓС‰РёР№
 	return (node);
 }
 
-// Прямой обход дерева
+// РџСЂСЏРјРѕР№ РѕР±С…РѕРґ РґРµСЂРµРІР°
 void traversePreOrder(struct node* temp) 
 {
 	if (temp != NULL) {
@@ -58,11 +58,11 @@ void traversePreOrder(struct node* temp)
 	}
 }
 
-int main() // f убрать
+int main() // f СѓР±СЂР°С‚СЊ
 {
 	setlocale(LC_ALL, "Russian");
 
-	cout << "Введите 2 новых значения списка: " << endl;
+	cout << "Р’РІРµРґРёС‚Рµ 2 РЅРѕРІС‹С… Р·РЅР°С‡РµРЅРёСЏ СЃРїРёСЃРєР°: " << endl;
 
 	int data;
 	struct node* Head = (struct node*)malloc(sizeof(struct node));
@@ -92,7 +92,7 @@ int main() // f убрать
 
 	}
 
-	cout << "Выводим значения списка: " << endl;
+	cout << "Р’С‹РІРѕРґРёРј Р·РЅР°С‡РµРЅРёСЏ СЃРїРёСЃРєР°: " << endl;
 	traversePreOrder(Head);
 
 	*/

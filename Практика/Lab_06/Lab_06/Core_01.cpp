@@ -34,16 +34,16 @@ void main()
 	deque<int> deq;
     vector<int> vectRes;
 
-    // Заполняю двухстороннюю очередь
+    // Р—Р°РїРѕР»РЅСЏСЋ РґРІСѓС…СЃС‚РѕСЂРѕРЅРЅСЋСЋ РѕС‡РµСЂРµРґСЊ
 	for (int i = 0; i < Size; i++)
 	{
 		deq.push_back(i);
 	}
 
-    // Переношу из очереди в вектор
+    // РџРµСЂРµРЅРѕС€Сѓ РёР· РѕС‡РµСЂРµРґРё РІ РІРµРєС‚РѕСЂ
     vectRes = DeqToVect(vect, deq);
 
-    // Вывожу знвчения вектора
+    // Р’С‹РІРѕР¶Сѓ Р·РЅРІС‡РµРЅРёСЏ РІРµРєС‚РѕСЂР°
     vector<int>::iterator vectIt;
     for (vectIt = vectRes.begin(); vectIt != vectRes.end(); vectIt++)
     {

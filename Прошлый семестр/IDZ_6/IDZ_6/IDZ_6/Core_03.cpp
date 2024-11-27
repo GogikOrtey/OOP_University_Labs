@@ -1,4 +1,4 @@
-// ДЛС
+// Р”Р›РЎ
 #include <iostream>
 #include <cmath>
 #include <time.h>
@@ -6,30 +6,30 @@ using namespace std;
 
 /*
 
-struct list // Описание структуры
+struct list // РћРїРёСЃР°РЅРёРµ СЃС‚СЂСѓРєС‚СѓСЂС‹
 {
-	int field; // поле данных
-	struct list* next; // указатель на следующий элемент
-	struct list* prev; // указатель на предыдущий элемент
+	int field; // РїРѕР»Рµ РґР°РЅРЅС‹С…
+	struct list* next; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СЃР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚
+	struct list* prev; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РїСЂРµРґС‹РґСѓС‰РёР№ СЌР»РµРјРµРЅС‚
 };
 
-struct list* Head; // Корень списка
-struct list* Head_const; // Корень списка
+struct list* Head; // РљРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
+struct list* Head_const; // РљРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
 int size_;
 int fsize;
 
-struct list* init(int a)  // Инициализация первого элемента
+struct list* init(int a)  // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїРµСЂРІРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
 {
 	//struct list* lst;
-	// выделение памяти под корень списка
+	// РІС‹РґРµР»РµРЅРёРµ РїР°РјСЏС‚Рё РїРѕРґ РєРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
 	Head = (struct list*)malloc(sizeof(struct list));
 	Head->field = a;
-	Head->next = NULL; // указатель на следующий узел
-	Head->prev = NULL; // указатель на предыдущий узел
+	Head->next = NULL; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СЃР»РµРґСѓСЋС‰РёР№ СѓР·РµР»
+	Head->prev = NULL; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РїСЂРµРґС‹РґСѓС‰РёР№ СѓР·РµР»
 	return(Head);
 }
 
-struct list* addelemEnd(int data) // Добавление нового элемента в конец
+struct list* addelemEnd(int data) // Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅРµС†
 {
 	struct list* temp, * p;
 	temp = (struct list*)malloc(sizeof(list));
@@ -40,7 +40,7 @@ struct list* addelemEnd(int data) // Добавление нового элемента в конец
 		p = p->next;
 	}
 
-	//cout << "Последний элемент списка = " << p->field << endl;
+	//cout << "РџРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР° = " << p->field << endl;
 
 	p->next = temp;
 	temp->prev = p;
@@ -50,16 +50,16 @@ struct list* addelemEnd(int data) // Добавление нового элемента в конец
 	return(temp);
 }
 
-struct list* deletehead(list* temp) // Удаление корня
+struct list* deletehead(list* temp) // РЈРґР°Р»РµРЅРёРµ РєРѕСЂРЅСЏ
 {
-	cout << "Мы удаляем элемент, как корень: " << temp->field << endl;
+	cout << "РњС‹ СѓРґР°Р»СЏРµРј СЌР»РµРјРµРЅС‚, РєР°Рє РєРѕСЂРµРЅСЊ: " << temp->field << endl;
 	
-	return(temp->next); // новый корень списка
+	return(temp->next); // РЅРѕРІС‹Р№ РєРѕСЂРµРЅСЊ СЃРїРёСЃРєР°
 	Head = temp->next;
 	delete(temp);
 }
 
-struct list* deletelem(list* temp) // Удаление элемента
+struct list* deletelem(list* temp) // РЈРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
 {
 	if (temp = Head)
 	{
@@ -67,9 +67,9 @@ struct list* deletelem(list* temp) // Удаление элемента
 	}
 	else
 	{
-		cout << "Мы удаляем элемент: " << temp->field << endl;
+		cout << "РњС‹ СѓРґР°Р»СЏРµРј СЌР»РµРјРµРЅС‚: " << temp->field << endl;
 		
-		//struct list* prev, * nextprev = lst->prev; // узел, предшествующий next = lst->next; // узел, следующий за if ((prev != NULL)	prev->next = lst->next; // переставляем if (next != NULL	next->prev = lst->prev; // переставляем free(lst); // освобождаем память удаляемого return(next);
+		//struct list* prev, * nextprev = lst->prev; // СѓР·РµР», РїСЂРµРґС€РµСЃС‚РІСѓСЋС‰РёР№ next = lst->next; // СѓР·РµР», СЃР»РµРґСѓСЋС‰РёР№ Р·Р° if ((prev != NULL)	prev->next = lst->next; // РїРµСЂРµСЃС‚Р°РІР»СЏРµРј if (next != NULL	next->prev = lst->prev; // РїРµСЂРµСЃС‚Р°РІР»СЏРµРј free(lst); // РѕСЃРІРѕР±РѕР¶РґР°РµРј РїР°РјСЏС‚СЊ СѓРґР°Р»СЏРµРјРѕРіРѕ return(next);
 		
 		
 		temp->prev = temp->next;
@@ -81,7 +81,7 @@ struct list* deletelem(list* temp) // Удаление элемента
 	}
 }
 
-void listprint(list* lst, int coll) // Вывод
+void listprint(list* lst, int coll) // Р’С‹РІРѕРґ
 {
 	struct list* p;
 	p = lst;
@@ -95,7 +95,7 @@ void listprint(list* lst, int coll) // Вывод
 			{
 				if (p->field != 0)
 				{
-					printf("%d ", p->field); // вывод значения элемента p
+					printf("%d ", p->field); // РІС‹РІРѕРґ Р·РЅР°С‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° p
 				}
 
 				if (p->next == Head)
@@ -103,7 +103,7 @@ void listprint(list* lst, int coll) // Вывод
 					break;
 				}
 
-				p = p->next; // переход к следующему узлу
+				p = p->next; // РїРµСЂРµС…РѕРґ Рє СЃР»РµРґСѓСЋС‰РµРјСѓ СѓР·Р»Сѓ
 				size_++;
 			}
 			else
@@ -122,7 +122,7 @@ void listprint(list* lst, int coll) // Вывод
 			{
 				if (p->field != 0)
 				{
-					printf("%d ", p->field); // вывод значения элемента p
+					printf("%d ", p->field); // РІС‹РІРѕРґ Р·РЅР°С‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° p
 				}
 
 				if (p->next == Head)
@@ -130,7 +130,7 @@ void listprint(list* lst, int coll) // Вывод
 					break;
 				}
 
-				p = p->next; // переход к следующему узлу
+				p = p->next; // РїРµСЂРµС…РѕРґ Рє СЃР»РµРґСѓСЋС‰РµРјСѓ СѓР·Р»Сѓ
 				size_++;
 			}
 			else
@@ -148,10 +148,10 @@ void listprint(list* lst, int coll) // Вывод
 void IteratingElements()
 {
 	struct list* temp, *temp2; 
-	struct list* p = new list[size_]; //(struct list*)malloc(sizeof(list)); // p - Указатель на начало самой длинной последовательности нечётных возрастающих чисел
+	struct list* p = new list[size_]; //(struct list*)malloc(sizeof(list)); // p - РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РЅР°С‡Р°Р»Рѕ СЃР°РјРѕР№ РґР»РёРЅРЅРѕР№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РЅРµС‡С‘С‚РЅС‹С… РІРѕР·СЂР°СЃС‚Р°СЋС‰РёС… С‡РёСЃРµР»
 	int buf = 0;
 	int* MaxLength = new int[size_];
-	int y = 0; // Указатель, в какую ячейку записывать, в этих 2 массивах
+	int y = 0; // РЈРєР°Р·Р°С‚РµР»СЊ, РІ РєР°РєСѓСЋ СЏС‡РµР№РєСѓ Р·Р°РїРёСЃС‹РІР°С‚СЊ, РІ СЌС‚РёС… 2 РјР°СЃСЃРёРІР°С…
 
 
 	temp = Head;
@@ -166,7 +166,7 @@ void IteratingElements()
 
 	while (temp->next != NULL)
 	{
-		if (abs(temp->field) % 2 == 1) // Если значение нечётно
+		if (abs(temp->field) % 2 == 1) // Р•СЃР»Рё Р·РЅР°С‡РµРЅРёРµ РЅРµС‡С‘С‚РЅРѕ
 		{
 			if (abs(temp->field) > buf)
 			{
@@ -187,13 +187,13 @@ void IteratingElements()
 		{
 			buf = 0;
 			y++;
-			//cout << "Значение чётно" << endl;
+			//cout << "Р—РЅР°С‡РµРЅРёРµ С‡С‘С‚РЅРѕ" << endl;
 		}
 
 		temp = temp->next;
 	}
 
-	// и ещё тут !!!
+	// Рё РµС‰С‘ С‚СѓС‚ !!!
 
 	//cout << "y = " << y << endl;
 
@@ -201,7 +201,7 @@ void IteratingElements()
 
 	if (true) //(y != 0)
 	{
-		cout << "Самая длинная цепочка нечётных возрастающих чисел: " << endl;
+		cout << "РЎР°РјР°СЏ РґР»РёРЅРЅР°СЏ С†РµРїРѕС‡РєР° РЅРµС‡С‘С‚РЅС‹С… РІРѕР·СЂР°СЃС‚Р°СЋС‰РёС… С‡РёСЃРµР»: " << endl;
 
 		int u = 0;
 		int Mbuf = (MaxLength[0]);
@@ -243,7 +243,7 @@ void IteratingElements()
 		}
 		else
 		{
-			cout << "В последовательности нет нечётных возрастающих последовательностей элементов" << endl;
+			cout << "Р’ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РЅРµС‚ РЅРµС‡С‘С‚РЅС‹С… РІРѕР·СЂР°СЃС‚Р°СЋС‰РёС… РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚РµР№ СЌР»РµРјРµРЅС‚РѕРІ" << endl;
 		}
 
 
@@ -254,8 +254,8 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 
-	cout << "Введите элементы для вставки в конец списка: " << endl;
-	cout << "Конец ввода - число 0." << endl;
+	cout << "Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РґР»СЏ РІСЃС‚Р°РІРєРё РІ РєРѕРЅРµС† СЃРїРёСЃРєР°: " << endl;
+	cout << "РљРѕРЅРµС† РІРІРѕРґР° - С‡РёСЃР»Рѕ 0." << endl;
 	int data = 1;
 	cin >> data;
 	init(data);
@@ -264,11 +264,11 @@ void main()
 	{
 		cin >> data;
 
-		// Вставка в конец:
+		// Р’СЃС‚Р°РІРєР° РІ РєРѕРЅРµС†:
 		addelemEnd(data);
 	}
 
-	cout << "Выводим знаения списка: " << endl;
+	cout << "Р’С‹РІРѕРґРёРј Р·РЅР°РµРЅРёСЏ СЃРїРёСЃРєР°: " << endl;
 	listprint(Head,0);
 
 	//Head_const = (struct list*)malloc(sizeof(list));

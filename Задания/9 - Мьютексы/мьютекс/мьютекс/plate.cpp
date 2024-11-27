@@ -27,7 +27,7 @@ int Plate::Loadind()
         BoxLoad = volume;
         volume = 0;
     }
-    // Время погрузки - 1 секунда
+    // Р’СЂРµРјСЏ РїРѕРіСЂСѓР·РєРё - 1 СЃРµРєСѓРЅРґР°
     std::this_thread::sleep_for(std::chrono::seconds(1));
 
     mu.unlock();

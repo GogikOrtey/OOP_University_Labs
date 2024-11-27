@@ -11,12 +11,12 @@ using namespace std;
 
 const int Size = 11;
 
-// Функция, которая копирует чётные значения из Set в List
+// Р¤СѓРЅРєС†РёСЏ, РєРѕС‚РѕСЂР°СЏ РєРѕРїРёСЂСѓРµС‚ С‡С‘С‚РЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ РёР· Set РІ List
 list<int> SetToList(set<int> set1)
 {
     list<int> list1;
 
-    // Вставляю в List значения из Set
+    // Р’СЃС‚Р°РІР»СЏСЋ РІ List Р·РЅР°С‡РµРЅРёСЏ РёР· Set
     for (set<int>::iterator it =
         set1.begin();
         it != set1.end();
@@ -38,16 +38,16 @@ void main()
 	list<int> list1;
 	set<int> set1;
 
-    // Заполняю Set значениями
+    // Р—Р°РїРѕР»РЅСЏСЋ Set Р·РЅР°С‡РµРЅРёСЏРјРё
     for (int i = 0; i < Size; i++)
     {
         set1.insert(i);
     }
 
-    // Вызываю нужную функцию
+    // Р’С‹Р·С‹РІР°СЋ РЅСѓР¶РЅСѓСЋ С„СѓРЅРєС†РёСЋ
     list1 = SetToList(set1);
 
-    // Вывожу элементы из list
+    // Р’С‹РІРѕР¶Сѓ СЌР»РµРјРµРЅС‚С‹ РёР· list
     for (list<int>::iterator it = list1.begin();
         it != list1.end();
         it++)

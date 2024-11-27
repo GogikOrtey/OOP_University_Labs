@@ -5,14 +5,14 @@ using namespace std;
 
 #include "Vector.h"
 
-string On(Vector o1, Vector o2) // Это только для того, что бы они красиво выводили "true" или "false", а не 1 или 0.
+string On(Vector o1, Vector o2) // Р­С‚Рѕ С‚РѕР»СЊРєРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚Рѕ Р±С‹ РѕРЅРё РєСЂР°СЃРёРІРѕ РІС‹РІРѕРґРёР»Рё "true" РёР»Рё "false", Р° РЅРµ 1 РёР»Рё 0.
 {
 	if (o1 == o2) return "true";
 	else return "false";
 }
 
 /*
-string On2(Vector o1, Vector o2, Vector o3) // Это только для того, что бы они красиво выводили "true" или "false", а не 1 или 0.
+string On2(Vector o1, Vector o2, Vector o3) // Р­С‚Рѕ С‚РѕР»СЊРєРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚Рѕ Р±С‹ РѕРЅРё РєСЂР°СЃРёРІРѕ РІС‹РІРѕРґРёР»Рё "true" РёР»Рё "false", Р° РЅРµ 1 РёР»Рё 0.
 {
 	if ((o1 == o2) == o3) return "true";
 	else return "false";
@@ -29,19 +29,19 @@ void main()
 {
 	setlocale(LC_ALL, "rus");
 
-	cout << "Введите координаты вектора a" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµРєС‚РѕСЂР° a" << endl;
 	Vector a(true);
 	cout << endl;
 	cout << "a: "; a.info();
 	cout << endl;
 
-	cout << "Введите координаты вектора b" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµРєС‚РѕСЂР° b" << endl;
 	Vector b(true);
 	cout << endl;
 	cout << "b: "; b.info();
 	cout << endl;
 
-	cout << "Введите координаты вектора c" << endl;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµРєС‚РѕСЂР° c" << endl;
 	Vector c(true);
 	cout << endl;
 	cout << "c: "; c.info();

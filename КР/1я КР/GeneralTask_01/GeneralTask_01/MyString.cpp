@@ -40,7 +40,7 @@ MyString::MyString(char simvol)
 
 //void MyString::Print(char* massSimv)
 //{
-//	cout << "Âûâîäèì ñòðîêó:" << endl;
+//	cout << "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑÑ‚Ñ€Ð¾ÐºÑƒ:" << endl;
 //
 //	for (int i = 0; i < length; i++)
 //	{
@@ -52,13 +52,13 @@ MyString::MyString(char simvol)
 
 void MyString::Print()
 {
-	cout << "Âûâîäèì ñòðîêó:" << endl;
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑÑ‚Ñ€Ð¾ÐºÑƒ:" << endl;
 
 	string s = "";
 
 	for (int i = 0; i < length; i++)
 	{
-		if(simv[i]!='ý')
+		if(simv[i]!='Ñ')
 		{
 			s += simv[i];
 		}
@@ -66,7 +66,7 @@ void MyString::Print()
 
 	if ((s.length() == 0) || (simv[0] == '\0'))
 	{
-		cout << "[Ñòðîêà ïóñòà]" << endl;
+		cout << "[Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ð¿ÑƒÑÑ‚Ð°]" << endl;
 	}
 	else cout << s;
 
@@ -93,7 +93,7 @@ MyString& MyString::operator-(MyString& massSimv)
 {
 	MyString simv3;
 
-	// Íàõîäèì íàèìåíüøóþ äëèííó, ÷òî áû íå áûëî âûõîäà çà ïðåäåëû ìàññèâà
+	// ÐÐ°Ñ…Ð¾Ð´Ð¸Ð¼ Ð½Ð°Ð¸Ð¼ÐµÐ½ÑŒÑˆÑƒÑŽ Ð´Ð»Ð¸Ð½Ð½Ñƒ, Ñ‡Ñ‚Ð¾ Ð±Ñ‹ Ð½Ðµ Ð±Ñ‹Ð»Ð¾ Ð²Ñ‹Ñ…Ð¾Ð´Ð° Ð·Ð° Ð¿Ñ€ÐµÐ´ÐµÐ»Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	int length3 = 0;
 	if (length < massSimv.length) length3 = length;
 	else length3 = massSimv.length;
@@ -113,7 +113,7 @@ MyString& MyString::operator-(MyString& massSimv)
 
 void MyString::In()
 {
-	cout << "Ââîäèòå çíà÷åíèÿ ñòðîêè, ïîñèìâîëüíî. Êîíåö ââîäà - ìèíóñ" << endl;
+	cout << "Ð’Ð²Ð¾Ð´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑÑ‚Ñ€Ð¾ÐºÐ¸, Ð¿Ð¾ÑÐ¸Ð¼Ð²Ð¾Ð»ÑŒÐ½Ð¾. ÐšÐ¾Ð½ÐµÑ† Ð²Ð²Ð¾Ð´Ð° - Ð¼Ð¸Ð½ÑƒÑ" << endl;
 
 	char a = '0';
 	int i = 0;

@@ -16,20 +16,20 @@ void file::info()
 
 file::file(string name, bool Empty) 
 {
-	cout << "Ôàéë " << name << " ñîçäàí" << endl;
+	cout << "Ð¤Ð°Ð¹Ð» " << name << " ÑÐ¾Ð·Ð´Ð°Ð½" << endl;
 
 	isInvisible = false;
 	isCompressed = false;
 	isEmpty = Empty;
 
-	cout << "Ââåäèòå äàííûå äëÿ ýòîãî ôàéëà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°: ";
 	cin >> Data;
 
 	Name = name;
 	Data = Data;
 
 	size = Data.length() + Name.length();
-	cout << "Òåêóùèé ðàçìåð ôàéëà = " << size << endl;
+	cout << "Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ñ„Ð°Ð¹Ð»Ð° = " << size << endl;
 }
 
 file::file()

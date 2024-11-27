@@ -4,7 +4,7 @@ using namespace std;
 
 DoobleAr::DoobleAr()
 {
-	this->size = 2; // Размер по умолчанию = 2
+	this->size = 2; // Р Р°Р·РјРµСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ = 2
 	this->arr = new double[size];
 
 	for (int i = 0; i < size; i++)
@@ -34,7 +34,7 @@ DoobleAr::~DoobleAr()
 
 void DoobleAr::info()
 {
-	cout << "Размер массива = " << this->size << endl;
+	cout << "Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР° = " << this->size << endl;
 	for (int i = 0; i < size; i++) 
 	{
 		cout << arr[i] << "; ";
@@ -62,13 +62,13 @@ DoobleAr& DoobleAr::addElement(double elem)
 		}
 	}
 
-	if (fl == true) // Если в массиве есть нулевые элементы
+	if (fl == true) // Р•СЃР»Рё РІ РјР°СЃСЃРёРІРµ РµСЃС‚СЊ РЅСѓР»РµРІС‹Рµ СЌР»РµРјРµРЅС‚С‹
 	{
-		//cout << "В массиве есть нулевой элемент с индексом " << ii << endl;
+		//cout << "Р’ РјР°СЃСЃРёРІРµ РµСЃС‚СЊ РЅСѓР»РµРІРѕР№ СЌР»РµРјРµРЅС‚ СЃ РёРЅРґРµРєСЃРѕРј " << ii << endl;
 		this->arr[ii] = elem;
 	}
 
-	if (fl == false) // Если в массиве нет нулевых элементов
+	if (fl == false) // Р•СЃР»Рё РІ РјР°СЃСЃРёРІРµ РЅРµС‚ РЅСѓР»РµРІС‹С… СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		cout << "size++" << endl;
 		double* arr2 = new double[size+1];

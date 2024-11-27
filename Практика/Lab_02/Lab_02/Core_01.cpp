@@ -14,21 +14,21 @@ T& SolutionEquation(T a, T b, T c, T d)
 	if (a == 0)
 	{
 		return a;
-		// Оригинально не делю на ноль
+		// РћСЂРёРіРёРЅР°Р»СЊРЅРѕ РЅРµ РґРµР»СЋ РЅР° РЅРѕР»СЊ
 	}
 	else
 	{
-		// Приоритет операций, когда есть скобки:
-		// Ну да, ну да, пошёл я нафиг
-		// P.S.: Он тут ломается, по этому сделал так:
+		// РџСЂРёРѕСЂРёС‚РµС‚ РѕРїРµСЂР°С†РёР№, РєРѕРіРґР° РµСЃС‚СЊ СЃРєРѕР±РєРё:
+		// РќСѓ РґР°, РЅСѓ РґР°, РїРѕС€С‘Р» СЏ РЅР°С„РёРі
+		// P.S.: РћРЅ С‚СѓС‚ Р»РѕРјР°РµС‚СЃСЏ, РїРѕ СЌС‚РѕРјСѓ СЃРґРµР»Р°Р» С‚Р°Рє:
 
 		x1 = c * d;
 		x2 = x1 - b;
 		x3 = x2 / a;
 		return x3;
 
-		// Мне нужно было найти х в уравнени
-		// Полная формула выглядит так: x = (c * d - b) / a
+		// РњРЅРµ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РЅР°Р№С‚Рё С… РІ СѓСЂР°РІРЅРµРЅРё
+		// РџРѕР»РЅР°СЏ С„РѕСЂРјСѓР»Р° РІС‹РіР»СЏРґРёС‚ С‚Р°Рє: x = (c * d - b) / a
 	}
 }
 
@@ -51,7 +51,7 @@ void main()
 	char c2 = SolutionEquation('%', '$', '`', '='); // char 2
 	cout << "char 2: " << c2 << endl; 
 
-	char c3 = SolutionEquation('я', 'б', 'в', 'г'); // char 3
+	char c3 = SolutionEquation('СЏ', 'Р±', 'РІ', 'Рі'); // char 3
 	cout << "char 3: " << c3 << endl;
 
 	char c4 = SolutionEquation('0', '1', '9', '9'); // char 4
@@ -61,15 +61,15 @@ void main()
 
 	bool b1 = SolutionEquation(true, false, true, false); // bool 1
 	(b1 == true) ? cout << "bool 1: true" << endl : cout << "bool 1: false" << endl; 
-	// Оригинально сэкономил 1 строчку кода
+	// РћСЂРёРіРёРЅР°Р»СЊРЅРѕ СЃСЌРєРѕРЅРѕРјРёР» 1 СЃС‚СЂРѕС‡РєСѓ РєРѕРґР°
 
 	bool b2 = SolutionEquation(false, false, false, false); // bool 2
 	(b2 == true) ? cout << "bool 2: true" << endl : cout << "bool 2: false" << endl;
-	// И ещё одну
+	// Р РµС‰С‘ РѕРґРЅСѓ
 
 	bool b3 = SolutionEquation(true, false, true, true); // bool 3
 	(b3 == true) ? cout << "bool 3: true" << endl : cout << "bool 3: false" << endl;
-	// И тут тоже
+	// Р С‚СѓС‚ С‚РѕР¶Рµ
 	cout << endl;
 
 
@@ -81,7 +81,7 @@ void main()
 	cout << endl;
 	}
 
-	// Это было невероятно сложно сделать:
+	// Р­С‚Рѕ Р±С‹Р»Рѕ РЅРµРІРµСЂРѕСЏС‚РЅРѕ СЃР»РѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ:
 
 	MassTwo m1(0,2);
 	MassTwo m2(3,4);
