@@ -1,5 +1,5 @@
-//7. Найти произведение и частное всех отрицательных элементов строк матрицы. 
-// Каждая строка обрабатывается своим отдельным потоком.
+//7. РќР°Р№С‚Рё РїСЂРѕРёР·РІРµРґРµРЅРёРµ Рё С‡Р°СЃС‚РЅРѕРµ РІСЃРµС… РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹. 
+// РљР°Р¶РґР°СЏ СЃС‚СЂРѕРєР° РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚СЃСЏ СЃРІРѕРёРј РѕС‚РґРµР»СЊРЅС‹Рј РїРѕС‚РѕРєРѕРј.
 
 #include <iostream>
 #include <vector>
@@ -11,8 +11,8 @@
 #include <sstream>
 using namespace std;
 
-void mult(vector<int> arr, int& res)    // Функция потока, суммирующая элементы массива.
-{                                       // Результат записывается в переменную sum, передаваемую по ссылке    
+void mult(vector<int> arr, int& res)    // Р¤СѓРЅРєС†РёСЏ РїРѕС‚РѕРєР°, СЃСѓРјРјРёСЂСѓСЋС‰Р°СЏ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°.
+{                                       // Р РµР·СѓР»СЊС‚Р°С‚ Р·Р°РїРёСЃС‹РІР°РµС‚СЃСЏ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ sum, РїРµСЂРµРґР°РІР°РµРјСѓСЋ РїРѕ СЃСЃС‹Р»РєРµ    
     int result = 1;
     for (int element : arr) 
     {
@@ -30,8 +30,8 @@ void mult(vector<int> arr, int& res)    // Функция потока, сумм
     */    
 }
 
-void divi(vector<int> arr, float& res)  // Функция потока, суммирующая элементы массива.
-{                                       // Результат записывается в переменную sum, передаваемую по ссылке    
+void divi(vector<int> arr, float& res)  // Р¤СѓРЅРєС†РёСЏ РїРѕС‚РѕРєР°, СЃСѓРјРјРёСЂСѓСЋС‰Р°СЏ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°.
+{                                       // Р РµР·СѓР»СЊС‚Р°С‚ Р·Р°РїРёСЃС‹РІР°РµС‚СЃСЏ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ sum, РїРµСЂРµРґР°РІР°РµРјСѓСЋ РїРѕ СЃСЃС‹Р»РєРµ    
     float result = 1.0;
     for (int element : arr)
     {
@@ -45,27 +45,27 @@ void main()
     setlocale(LC_ALL, "rus");
     srand((unsigned)time(NULL));
 
-    int vectorNumber = 20;  // Число строк матрицы
-    int vectorSize = 20;    // Число столбцов
+    int vectorNumber = 20;  // Р§РёСЃР»Рѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+    int vectorSize = 20;    // Р§РёСЃР»Рѕ СЃС‚РѕР»Р±С†РѕРІ
 
-    // Создаём матрицу - вектор из весторов
+    // РЎРѕР·РґР°С‘Рј РјР°С‚СЂРёС†Сѓ - РІРµРєС‚РѕСЂ РёР· РІРµСЃС‚РѕСЂРѕРІ
     vector<vector<int> > matrix(vectorNumber);
     for (vector<int>& element : matrix)
     {
         element = vector<int>(vectorSize);
     }
 
-    // Заполняем матрицу значениями
+    // Р—Р°РїРѕР»РЅСЏРµРј РјР°С‚СЂРёС†Сѓ Р·РЅР°С‡РµРЅРёСЏРјРё
     for (int i = 0; i < vectorNumber; i++)
     {
         for (int j = 0; j < vectorSize; j++)
         {
-            int n = rand() % 41 + 0;    //от 0 до 40 (включительно)
-            matrix[i][j] = n - 20;      //от -20 до 20
+            int n = rand() % 41 + 0;    //РѕС‚ 0 РґРѕ 40 (РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ)
+            matrix[i][j] = n - 20;      //РѕС‚ -20 РґРѕ 20
         }
     }
 
-    cout << "Выводим матрицу: " << endl;
+    cout << "Р’С‹РІРѕРґРёРј РјР°С‚СЂРёС†Сѓ: " << endl;
     cout << endl;
     for (int i = 0; i < vectorNumber; i++)
     {
@@ -77,56 +77,56 @@ void main()
     }
 
     cout << endl;
-    cout << "Произведение всех отрицательных элементов строк матицы: " << endl;
+    cout << "РџСЂРѕРёР·РІРµРґРµРЅРёРµ РІСЃРµС… РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРє РјР°С‚РёС†С‹: " << endl;
     cout << endl;
 
-    //// Произведение
+    //// РџСЂРѕРёР·РІРµРґРµРЅРёРµ
 
-    vector<int> vectorOfSum(vectorNumber); //вектор для хранения сумм строк матрицы
-    vector<thread> vectorOfTreads(vectorNumber); //вектор потоков
+    vector<int> vectorOfSum(vectorNumber); //РІРµРєС‚РѕСЂ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ СЃСѓРјРј СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+    vector<thread> vectorOfTreads(vectorNumber); //РІРµРєС‚РѕСЂ РїРѕС‚РѕРєРѕРІ
 
-    // создаём потоки
+    // СЃРѕР·РґР°С‘Рј РїРѕС‚РѕРєРё
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads[i] = thread(mult, matrix[i], ref(vectorOfSum[i]));
         //vectorOfTreads[i] = thread(mult, matrix, ref(vectorOfSum[i]));
     }
 
-    // ждём завершения всех потоков
+    // Р¶РґС‘Рј Р·Р°РІРµСЂС€РµРЅРёСЏ РІСЃРµС… РїРѕС‚РѕРєРѕРІ
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads[i].join();
     }
 
-    // выводим результат
+    // РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
     for (int i = 0; i < vectorNumber; i++)
     {
         cout << vectorOfSum[i] << "\n";
     }
 
-    //// Частное
+    //// Р§Р°СЃС‚РЅРѕРµ
 
     cout << endl;
-    cout << "Частное всех отрицательных элементов строк матицы: " << endl;
+    cout << "Р§Р°СЃС‚РЅРѕРµ РІСЃРµС… РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРє РјР°С‚РёС†С‹: " << endl;
     cout << endl;
 
-    vector<float> vectorOfSum1(vectorNumber); //вектор для хранения сумм строк матрицы
-    vector<thread> vectorOfTreads1(vectorNumber); //вектор потоков
+    vector<float> vectorOfSum1(vectorNumber); //РІРµРєС‚РѕСЂ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ СЃСѓРјРј СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+    vector<thread> vectorOfTreads1(vectorNumber); //РІРµРєС‚РѕСЂ РїРѕС‚РѕРєРѕРІ
 
-    // создаём потоки
+    // СЃРѕР·РґР°С‘Рј РїРѕС‚РѕРєРё
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads1[i] = thread(divi, matrix[i], ref(vectorOfSum1[i]));
         //vectorOfTreads[i] = thread(mult, matrix, ref(vectorOfSum[i]));
     }
 
-    // ждём завершения всех потоков
+    // Р¶РґС‘Рј Р·Р°РІРµСЂС€РµРЅРёСЏ РІСЃРµС… РїРѕС‚РѕРєРѕРІ
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads1[i].join();
     }
 
-    // выводим результат
+    // РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
     for (int i = 0; i < vectorNumber; i++)
     {
         cout << vectorOfSum1[i] << "\n";
@@ -135,9 +135,9 @@ void main()
 
 
 /*
-// Пример задачи, в которой используется многопоточное выполнение программы
-// Нужно сложить элементы строк матрицы
-// Каждая строка суммируется своим  отдельным потоком
+// РџСЂРёРјРµСЂ Р·Р°РґР°С‡Рё, РІ РєРѕС‚РѕСЂРѕР№ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РјРЅРѕРіРѕРїРѕС‚РѕС‡РЅРѕРµ РІС‹РїРѕР»РЅРµРЅРёРµ РїСЂРѕРіСЂР°РјРјС‹
+// РќСѓР¶РЅРѕ СЃР»РѕР¶РёС‚СЊ СЌР»РµРјРµРЅС‚С‹ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+// РљР°Р¶РґР°СЏ СЃС‚СЂРѕРєР° СЃСѓРјРјРёСЂСѓРµС‚СЃСЏ СЃРІРѕРёРј  РѕС‚РґРµР»СЊРЅС‹Рј РїРѕС‚РѕРєРѕРј
 
 #include <iostream>
 #include <vector>
@@ -149,8 +149,8 @@ void main()
 #include <sstream>
 using namespace std;
 
-void add(vector<int> arr, int& sum)     // Функция потока, суммирующая элементы массива.
-{                                       // Результат записывается в переменную sum, передаваемую по ссылке
+void add(vector<int> arr, int& sum)     // Р¤СѓРЅРєС†РёСЏ РїРѕС‚РѕРєР°, СЃСѓРјРјРёСЂСѓСЋС‰Р°СЏ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°.
+{                                       // Р РµР·СѓР»СЊС‚Р°С‚ Р·Р°РїРёСЃС‹РІР°РµС‚СЃСЏ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ sum, РїРµСЂРµРґР°РІР°РµРјСѓСЋ РїРѕ СЃСЃС‹Р»РєРµ
     int result = 1;
     for (int element : arr)
     {
@@ -168,8 +168,8 @@ void add(vector<int> arr, int& sum)     // Функция потока, сумм
     
 }
 
-void add1(vector<int> arr, float& sum)  // Функция потока, суммирующая элементы массива.
-{                                       // Результат записывается в переменную sum, передаваемую по ссылке    
+void add1(vector<int> arr, float& sum)  // Р¤СѓРЅРєС†РёСЏ РїРѕС‚РѕРєР°, СЃСѓРјРјРёСЂСѓСЋС‰Р°СЏ СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°.
+{                                       // Р РµР·СѓР»СЊС‚Р°С‚ Р·Р°РїРёСЃС‹РІР°РµС‚СЃСЏ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ sum, РїРµСЂРµРґР°РІР°РµРјСѓСЋ РїРѕ СЃСЃС‹Р»РєРµ    
     float result = 1.0;
     for (int element : arr)
     {
@@ -183,29 +183,29 @@ void main()
     setlocale(LC_ALL, "rus");
     srand((unsigned)time(NULL));
 
-    int vectorNumber = 20;  // Число строк матрицы
-    int vectorSize = 20;   // Число столбцов
+    int vectorNumber = 20;  // Р§РёСЃР»Рѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+    int vectorSize = 20;   // Р§РёСЃР»Рѕ СЃС‚РѕР»Р±С†РѕРІ
 
     //vector<int> resVect(vectorNumber * vectorSize);
 
-    // Создаём матрицу - вектор из весторов
+    // РЎРѕР·РґР°С‘Рј РјР°С‚СЂРёС†Сѓ - РІРµРєС‚РѕСЂ РёР· РІРµСЃС‚РѕСЂРѕРІ
     vector<vector<int> > matrix(vectorNumber);
     for (vector<int>& element : matrix)
     {
         element = vector<int>(vectorSize);
     }
 
-    // Заполняем матрицу значениями
+    // Р—Р°РїРѕР»РЅСЏРµРј РјР°С‚СЂРёС†Сѓ Р·РЅР°С‡РµРЅРёСЏРјРё
     for (int i = 0; i < vectorNumber; i++)
     {
         for (int j = 0; j < vectorSize; j++)
         {
-            int n = rand() % 41 + 0;    //от 0 до 40 (включительно)
-            matrix[i][j] = n - 20;      //от -20 до 20
+            int n = rand() % 41 + 0;    //РѕС‚ 0 РґРѕ 40 (РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ)
+            matrix[i][j] = n - 20;      //РѕС‚ -20 РґРѕ 20
         }
     }
 
-    cout << "Выводим матрицу: " << endl;
+    cout << "Р’С‹РІРѕРґРёРј РјР°С‚СЂРёС†Сѓ: " << endl;
     cout << endl;
     for (int i = 0; i < vectorNumber; i++)
     {
@@ -217,56 +217,56 @@ void main()
     }
 
     cout << endl;
-    cout << "Произведение всех отрицательных элементов строк матицы: " << endl;
+    cout << "РџСЂРѕРёР·РІРµРґРµРЅРёРµ РІСЃРµС… РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРє РјР°С‚РёС†С‹: " << endl;
     cout << endl;
 
-    //// Произведение
+    //// РџСЂРѕРёР·РІРµРґРµРЅРёРµ
 
-    vector<int> vectorOfSum(vectorNumber); //вектор для хранения сумм строк матрицы
-    vector<thread> vectorOfTreads(vectorNumber); //вектор потоков
+    vector<int> vectorOfSum(vectorNumber); //РІРµРєС‚РѕСЂ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ СЃСѓРјРј СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+    vector<thread> vectorOfTreads(vectorNumber); //РІРµРєС‚РѕСЂ РїРѕС‚РѕРєРѕРІ
 
-    // создаём потоки
+    // СЃРѕР·РґР°С‘Рј РїРѕС‚РѕРєРё
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads[i] = thread(add, matrix[i], ref(vectorOfSum[i]));
         //vectorOfTreads[i] = thread(mult, matrix, ref(vectorOfSum[i]));
     }
 
-    // ждём завершения всех потоков
+    // Р¶РґС‘Рј Р·Р°РІРµСЂС€РµРЅРёСЏ РІСЃРµС… РїРѕС‚РѕРєРѕРІ
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads[i].join();
     }
 
-    // выводим результат
+    // РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
     for (int i = 0; i < vectorNumber; i++)
     {
         cout << vectorOfSum[i] << "\n";
     }
 
-    //// Частное
+    //// Р§Р°СЃС‚РЅРѕРµ
 
     cout << endl;
-    cout << "Частное всех отрицательных элементов строк матицы: " << endl;
+    cout << "Р§Р°СЃС‚РЅРѕРµ РІСЃРµС… РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ СЃС‚СЂРѕРє РјР°С‚РёС†С‹: " << endl;
     cout << endl;
 
-    vector<float> vectorOfSum1(vectorNumber); //вектор для хранения сумм строк матрицы
-    vector<thread> vectorOfTreads1(vectorNumber); //вектор потоков
+    vector<float> vectorOfSum1(vectorNumber); //РІРµРєС‚РѕСЂ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ СЃСѓРјРј СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+    vector<thread> vectorOfTreads1(vectorNumber); //РІРµРєС‚РѕСЂ РїРѕС‚РѕРєРѕРІ
 
-    // создаём потоки
+    // СЃРѕР·РґР°С‘Рј РїРѕС‚РѕРєРё
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads1[i] = thread(add1, matrix[i], ref(vectorOfSum1[i]));
         //vectorOfTreads[i] = thread(mult, matrix, ref(vectorOfSum[i]));
     }
 
-    // ждём завершения всех потоков
+    // Р¶РґС‘Рј Р·Р°РІРµСЂС€РµРЅРёСЏ РІСЃРµС… РїРѕС‚РѕРєРѕРІ
     for (int i = 0; i < vectorNumber; i++)
     {
         vectorOfTreads1[i].join();
     }
 
-    // выводим результат
+    // РІС‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
     for (int i = 0; i < vectorNumber; i++)
     {
         cout << vectorOfSum1[i] << "\n";

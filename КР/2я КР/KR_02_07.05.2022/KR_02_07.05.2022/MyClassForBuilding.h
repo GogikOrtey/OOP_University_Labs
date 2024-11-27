@@ -15,8 +15,8 @@ struct Adress
 struct MyBuilding
 {
 	Adress Adr;
-	int Floors; // Колл-во этажей
-	bool Residential; // true, если живое
+	int Floors; // РљРѕР»Р»-РІРѕ СЌС‚Р°Р¶РµР№
+	bool Residential; // true, РµСЃР»Рё Р¶РёРІРѕРµ
 };
 
 class MyClassForBuilding
@@ -30,8 +30,8 @@ public:
 		myBuilding.Adr.house = "";
 		myBuilding.Adr.city = "";
 
-		myBuilding.Floors = 0; // Колл-во этажей
-		myBuilding.Residential = false; // true, если живое
+		myBuilding.Floors = 0; // РљРѕР»Р»-РІРѕ СЌС‚Р°Р¶РµР№
+		myBuilding.Residential = false; // true, РµСЃР»Рё Р¶РёРІРѕРµ
 	}
 
 	bool operator <= (MyClassForBuilding& m2);

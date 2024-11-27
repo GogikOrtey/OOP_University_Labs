@@ -9,7 +9,7 @@ private:
 	int* NumbersD = new int[5];
 
 public:
-	int PosComma = -1; // Позиция запятой
+	int PosComma = -1; // РџРѕР·РёС†РёСЏ Р·Р°РїСЏС‚РѕР№
 	float num = 0;
 
 	Decimal();

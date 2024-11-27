@@ -30,9 +30,9 @@ void Decimal::Print()
 
 		num = num / pow(10, (5 - PosComma));
 
-		cout << "Число = " << num << endl;
+		cout << "Р§РёСЃР»Рѕ = " << num << endl;
 	}
-	else cout << "Число = " << num << endl;
+	else cout << "Р§РёСЃР»Рѕ = " << num << endl;
 }
 
 void Decimal::Summ(int b) // +

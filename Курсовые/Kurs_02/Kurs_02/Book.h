@@ -36,14 +36,14 @@ public:
 
 	void TakeBook(User user_)
 	{
-		cout << "Пользователь " << user_.Name << ", возрастом " << user_.Age << " лет взял книгу " << Name << endl;
+		cout << "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ " << user_.Name << ", РІРѕР·СЂР°СЃС‚РѕРј " << user_.Age << " Р»РµС‚ РІР·СЏР» РєРЅРёРіСѓ " << Name << endl;
 		isTaken = true;
 		user = user_;
 	}
 
 	void TakeBook(User user_, Book book)
 	{
-		cout << "Пользователь " << user_.Name << ", возрастом " << user_.Age << " лет взял книгу " << book.Name << endl;
+		cout << "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ " << user_.Name << ", РІРѕР·СЂР°СЃС‚РѕРј " << user_.Age << " Р»РµС‚ РІР·СЏР» РєРЅРёРіСѓ " << book.Name << endl;
 		book.isTaken = true;
 		book.user = user_;
 	}
@@ -69,14 +69,14 @@ public:
 
 	void InfoForBook(Book book)
 	{
-		cout << "Это книга с названием [" << book.Name << "], Автора {" << book.author.FIO << "}" << endl;
-		if (book.isTaken == true) cout << "-> Этой книгой владеет пользователь " << book.user.Name << ", возрастом " << book.user.Age << " лет" << endl;
+		cout << "Р­С‚Рѕ РєРЅРёРіР° СЃ РЅР°Р·РІР°РЅРёРµРј [" << book.Name << "], РђРІС‚РѕСЂР° {" << book.author.FIO << "}" << endl;
+		if (book.isTaken == true) cout << "-> Р­С‚РѕР№ РєРЅРёРіРѕР№ РІР»Р°РґРµРµС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ " << book.user.Name << ", РІРѕР·СЂР°СЃС‚РѕРј " << book.user.Age << " Р»РµС‚" << endl;
 	}
 
 	void InfoForBook()
 	{
-		cout << "Это книга с названием [" << Name << "], Автора {" << this->author.FIO << "}" << endl;
-		if (isTaken == true) cout << "-> Этой книгой владеет пользователь " << user.Name << ", возрастом " << user.Age << " лет" << endl;
+		cout << "Р­С‚Рѕ РєРЅРёРіР° СЃ РЅР°Р·РІР°РЅРёРµРј [" << Name << "], РђРІС‚РѕСЂР° {" << this->author.FIO << "}" << endl;
+		if (isTaken == true) cout << "-> Р­С‚РѕР№ РєРЅРёРіРѕР№ РІР»Р°РґРµРµС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ " << user.Name << ", РІРѕР·СЂР°СЃС‚РѕРј " << user.Age << " Р»РµС‚" << endl;
 	}
 
 	Book SearchBook(string name)
@@ -98,7 +98,7 @@ public:
 		if (b.Name == name)
 		{
 			Books.erase(b);
-			cout << "Удалена книга: ";
+			cout << "РЈРґР°Р»РµРЅР° РєРЅРёРіР°: ";
 			b.InfoForBook();
 		}
 		return b;
@@ -137,30 +137,30 @@ public:
 		if (isTrue == true)
 		{
 			user1.Users.erase(user1);
-			cout << "Успешно удалили пользователя " << user1.Name << endl;
+			cout << "РЈСЃРїРµС€РЅРѕ СѓРґР°Р»РёР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ " << user1.Name << endl;
 		}
 		else
 		{
-			cout << "Не можем удалить пользователя" << user1.Name << ", т.к. у него есть книги, которые он не вернул" << endl;
+			cout << "РќРµ РјРѕР¶РµРј СѓРґР°Р»РёС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ" << user1.Name << ", С‚.Рє. Сѓ РЅРµРіРѕ РµСЃС‚СЊ РєРЅРёРіРё, РєРѕС‚РѕСЂС‹Рµ РѕРЅ РЅРµ РІРµСЂРЅСѓР»" << endl;
 		}
 	}
 
 	void ShowAllBooks()
 	{
-		cout << "Выводим все книги, которые у нас есть: " << endl;
+		cout << "Р’С‹РІРѕРґРёРј РІСЃРµ РєРЅРёРіРё, РєРѕС‚РѕСЂС‹Рµ Сѓ РЅР°СЃ РµСЃС‚СЊ: " << endl;
 
 		for (set<Book>::iterator it = Books.begin();
 			it != Books.end();
 			it++)
 		{
 			InfoForBook(*it);
-			//cout << "Книга с именем: [" << it->Name << "], Автора {" << it->author.FIO << "}" << endl;
+			//cout << "РљРЅРёРіР° СЃ РёРјРµРЅРµРј: [" << it->Name << "], РђРІС‚РѕСЂР° {" << it->author.FIO << "}" << endl;
 		}
 	}
 
 	void ShowBooksGivenAuthor(Author Auf)
 	{
-		cout << "Все книги автора {" << Auf.FIO << "}:" << endl;
+		cout << "Р’СЃРµ РєРЅРёРіРё Р°РІС‚РѕСЂР° {" << Auf.FIO << "}:" << endl;
 
 		for (set<Book>::iterator it = Books.begin();
 			it != Books.end();

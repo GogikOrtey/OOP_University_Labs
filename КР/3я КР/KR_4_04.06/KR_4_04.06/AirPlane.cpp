@@ -6,7 +6,7 @@
 #include <sstream>
 using namespace std;
 
-AirPlane::AirPlane() // Конструктор без параметров
+AirPlane::AirPlane() // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ
 {
 	brand = "";
 	num = 0;
@@ -14,7 +14,7 @@ AirPlane::AirPlane() // Конструктор без параметров
 	currType = passenger;
 }
 
-AirPlane::AirPlane(string brand1, int num1, float weight1, type currType1) // Конструктор с параметрами
+AirPlane::AirPlane(string brand1, int num1, float weight1, type currType1) // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 {
 	brand = brand1;
 	num = num1;
@@ -24,7 +24,7 @@ AirPlane::AirPlane(string brand1, int num1, float weight1, type currType1) // К
 
 void AirPlane::Info()
 {
-	cout << "Выводим информацию о самолёте: " << endl;
+	cout << "Р’С‹РІРѕРґРёРј РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃР°РјРѕР»С‘С‚Рµ: " << endl;
 	cout << "brand = " << brand << " num = " << num << " weight = " << weight << " currType = "; //<< currType << endl;
 
 	if (currType == 0) cout << "passenger";

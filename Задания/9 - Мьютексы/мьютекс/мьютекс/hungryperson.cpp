@@ -36,7 +36,7 @@ void HungryPerson::eat(HungryPerson& person)
         person.riceLoad = person.riceLoad + itemEated;
 
         con_mu.lock();
-        std::cout << person.id << "-й грузовик перевёз " << itemEated << "шт. грузов    (" << person.riceLoad << "шт. за все рейсы)" << endl;
+        std::cout << person.id << "-Р№ РіСЂСѓР·РѕРІРёРє РїРµСЂРµРІС‘Р· " << itemEated << "С€С‚. РіСЂСѓР·РѕРІ    (" << person.riceLoad << "С€С‚. Р·Р° РІСЃРµ СЂРµР№СЃС‹)" << endl;
         con_mu.unlock();
     }
 }

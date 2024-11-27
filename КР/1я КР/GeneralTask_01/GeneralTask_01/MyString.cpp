@@ -40,7 +40,7 @@ MyString::MyString(char simvol)
 
 //void MyString::Print(char* massSimv)
 //{
-//	cout << "Выводим строку:" << endl;
+//	cout << "Р’С‹РІРѕРґРёРј СЃС‚СЂРѕРєСѓ:" << endl;
 //
 //	for (int i = 0; i < length; i++)
 //	{
@@ -52,13 +52,13 @@ MyString::MyString(char simvol)
 
 void MyString::Print()
 {
-	cout << "Выводим строку:" << endl;
+	cout << "Р’С‹РІРѕРґРёРј СЃС‚СЂРѕРєСѓ:" << endl;
 
 	string s = "";
 
 	for (int i = 0; i < length; i++)
 	{
-		if(simv[i]!='э')
+		if(simv[i]!='СЌ')
 		{
 			s += simv[i];
 		}
@@ -66,7 +66,7 @@ void MyString::Print()
 
 	if ((s.length() == 0) || (simv[0] == '\0'))
 	{
-		cout << "[Строка пуста]" << endl;
+		cout << "[РЎС‚СЂРѕРєР° РїСѓСЃС‚Р°]" << endl;
 	}
 	else cout << s;
 
@@ -93,7 +93,7 @@ MyString& MyString::operator-(MyString& massSimv)
 {
 	MyString simv3;
 
-	// Находим наименьшую длинну, что бы не было выхода за пределы массива
+	// РќР°С…РѕРґРёРј РЅР°РёРјРµРЅСЊС€СѓСЋ РґР»РёРЅРЅСѓ, С‡С‚Рѕ Р±С‹ РЅРµ Р±С‹Р»Рѕ РІС‹С…РѕРґР° Р·Р° РїСЂРµРґРµР»С‹ РјР°СЃСЃРёРІР°
 	int length3 = 0;
 	if (length < massSimv.length) length3 = length;
 	else length3 = massSimv.length;
@@ -113,7 +113,7 @@ MyString& MyString::operator-(MyString& massSimv)
 
 void MyString::In()
 {
-	cout << "Вводите значения строки, посимвольно. Конец ввода - минус" << endl;
+	cout << "Р’РІРѕРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ СЃС‚СЂРѕРєРё, РїРѕСЃРёРјРІРѕР»СЊРЅРѕ. РљРѕРЅРµС† РІРІРѕРґР° - РјРёРЅСѓСЃ" << endl;
 
 	char a = '0';
 	int i = 0;

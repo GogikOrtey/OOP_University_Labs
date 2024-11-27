@@ -57,9 +57,9 @@ void Binary::Print()
 			num += NumbersB[i] * pow(10, (5 - i - 1));
 		}
 
-		cout << "Двоичное число = " << num << endl;
+		cout << "Р”РІРѕРёС‡РЅРѕРµ С‡РёСЃР»Рѕ = " << num << endl;
 	}
-	else cout << "Двоичное число = " << num << endl;
+	else cout << "Р”РІРѕРёС‡РЅРѕРµ С‡РёСЃР»Рѕ = " << num << endl;
 }
 
 

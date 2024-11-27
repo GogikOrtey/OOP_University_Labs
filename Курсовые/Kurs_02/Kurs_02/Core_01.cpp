@@ -27,41 +27,41 @@ void main()
 	Author author;
 	User user;
 
-	// Создаём авторов:
+	// РЎРѕР·РґР°С‘Рј Р°РІС‚РѕСЂРѕРІ:
 	Author Es = author.CreateNew("Es");
 	Author Ph = author.CreateNew("Ph");
 
-	// Создаём книги:
+	// РЎРѕР·РґР°С‘Рј РєРЅРёРіРё:
 	Book A_01 = Books.CreateNewBook("A_01", Es); 
 	Book A_02 = Books.CreateNewBook("A_02", Es); 
 	Book A_03 = Books.CreateNewBook("A_03", Ph);
 
-	// Создаём новых пользователей:
+	// РЎРѕР·РґР°С‘Рј РЅРѕРІС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№:
 	User Petya = user.CreateNew("Petya", 12);
 	User Vasya = user.CreateNew("Vasya", 17);
 
 
-	author.ShowAllAuthors();		// Выводим всех авторов
+	author.ShowAllAuthors();		// Р’С‹РІРѕРґРёРј РІСЃРµС… Р°РІС‚РѕСЂРѕРІ
 
 	Razd();
-	Books.InfoForBook(A_03);		// Выводим название книги
+	Books.InfoForBook(A_03);		// Р’С‹РІРѕРґРёРј РЅР°Р·РІР°РЅРёРµ РєРЅРёРіРё
 
 	Razd();
-	Books.ShowAllBooks();			// Выводим все книги
+	Books.ShowAllBooks();			// Р’С‹РІРѕРґРёРј РІСЃРµ РєРЅРёРіРё
 
 	Razd();
-	Books.DelBook("A_02");			// Удаляем книгу по имени
+	Books.DelBook("A_02");			// РЈРґР°Р»СЏРµРј РєРЅРёРіСѓ РїРѕ РёРјРµРЅРё
 
 	Razd();
-	Books.ShowAllBooks();			// Ещё раз выводим все книги
+	Books.ShowAllBooks();			// Р•С‰С‘ СЂР°Р· РІС‹РІРѕРґРёРј РІСЃРµ РєРЅРёРіРё
 
 	Razd();
-	Books.ShowBooksGivenAuthor(Es);	// Выводим все книги автора Es
+	Books.ShowBooksGivenAuthor(Es);	// Р’С‹РІРѕРґРёРј РІСЃРµ РєРЅРёРіРё Р°РІС‚РѕСЂР° Es
 
 	Razd();
-	user.ShowAllUsers();			// Выводим всех пользователей, которые у нас есть
+	user.ShowAllUsers();			// Р’С‹РІРѕРґРёРј РІСЃРµС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№, РєРѕС‚РѕСЂС‹Рµ Сѓ РЅР°СЃ РµСЃС‚СЊ
 
 	Razd();
-	A_03.TakeBook(Vasya);			// Вася берёт себе 3ю книгу из нашей библиотеки
+	A_03.TakeBook(Vasya);			// Р’Р°СЃСЏ Р±РµСЂС‘С‚ СЃРµР±Рµ 3СЋ РєРЅРёРіСѓ РёР· РЅР°С€РµР№ Р±РёР±Р»РёРѕС‚РµРєРё
 }
 

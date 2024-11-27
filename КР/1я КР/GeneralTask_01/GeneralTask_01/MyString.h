@@ -8,10 +8,10 @@ public:
 	int length = 0;
 	char* simv; // = new char[length];
 
-	MyString(); // Конструктор без параметорв
-	MyString(char* massSimv); // Конструктор с параметрами
-	MyString(char simvol); // Конструктор принимающий символ
-	//MyString(string massSimv); // Для ввода значений из кода
+	MyString(); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚РѕСЂРІ
+	MyString(char* massSimv); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
+	MyString(char simvol); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРёРЅРёРјР°СЋС‰РёР№ СЃРёРјРІРѕР»
+	//MyString(string massSimv); // Р”Р»СЏ РІРІРѕРґР° Р·РЅР°С‡РµРЅРёР№ РёР· РєРѕРґР°
 
 	~MyString();
 

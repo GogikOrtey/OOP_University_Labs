@@ -14,12 +14,12 @@ using namespace std;
 
 ostream& operator<<(ostream& os, const MyClassForBuilding& d)
 {
-	return os << "[ City = " << d.myBuilding.Adr.city << ", Street = " << d.myBuilding.Adr.street << ", House = " << d.myBuilding.Adr.house << ", Floors = " << d.myBuilding.Floors << ", Residential = " << d.myBuilding.Residential; // Очень длинная строка, я знаю, знаю)
+	return os << "[ City = " << d.myBuilding.Adr.city << ", Street = " << d.myBuilding.Adr.street << ", House = " << d.myBuilding.Adr.house << ", Floors = " << d.myBuilding.Floors << ", Residential = " << d.myBuilding.Residential; // РћС‡РµРЅСЊ РґР»РёРЅРЅР°СЏ СЃС‚СЂРѕРєР°, СЏ Р·РЅР°СЋ, Р·РЅР°СЋ)
 }
 
 
 /*
-	В схватке со 2м заданием Орлов Георгий потрепел поражеие...
+	Р’ СЃС…РІР°С‚РєРµ СЃРѕ 2Рј Р·Р°РґР°РЅРёРµРј РћСЂР»РѕРІ Р“РµРѕСЂРіРёР№ РїРѕС‚СЂРµРїРµР» РїРѕСЂР°Р¶РµРёРµ...
 */
 
 //template<typename Type>
@@ -161,7 +161,7 @@ ostream& operator<<(ostream& os, const MyClassForBuilding& d)
 //}
 
 /*
-	3е задание тоже у меня не работет(
+	3Рµ Р·Р°РґР°РЅРёРµ С‚РѕР¶Рµ Сѓ РјРµРЅСЏ РЅРµ СЂР°Р±РѕС‚РµС‚(
 */
 
 //template <typename T>
@@ -183,7 +183,7 @@ ostream& operator<<(ostream& os, const MyClassForBuilding& d)
 //	deque<int> deq;
 //	//vector<int> vectRes;
 //
-//	// Заполняю вектор
+//	// Р—Р°РїРѕР»РЅСЏСЋ РІРµРєС‚РѕСЂ
 //	for (int i = 0; i < myMassInt.size; i++)
 //	{
 //		vect.push_back(myMassInt.Mass[i]);
@@ -191,7 +191,7 @@ ostream& operator<<(ostream& os, const MyClassForBuilding& d)
 //
 //	deq = VectorToQueue(vect, myMassInt.size);
 //
-//	// Вывожу значения deque
+//	// Р’С‹РІРѕР¶Сѓ Р·РЅР°С‡РµРЅРёСЏ deque
 //	deque<int>::iterator vectIt;
 //	for (vectIt = deq.begin(); vectIt != deq.end(); vectIt++)
 //	{
@@ -218,18 +218,18 @@ void main()
 			}
 			myMassInt.info();
 
-			//BustingTheContainer_Int(myMassInt); // 2 задание
-			//VecToDeq_Int(myMassInt); // 3 задание
+			//BustingTheContainer_Int(myMassInt); // 2 Р·Р°РґР°РЅРёРµ
+			//VecToDeq_Int(myMassInt); // 3 Р·Р°РґР°РЅРёРµ
 
-			// Удаляем по индексу
+			// РЈРґР°Р»СЏРµРј РїРѕ РёРЅРґРµРєСЃСѓ
 			myMassInt.DelInd(1, 2);
 			myMassInt.info();
 
-			// Удаляем по значению
+			// РЈРґР°Р»СЏРµРј РїРѕ Р·РЅР°С‡РµРЅРёСЋ
 			myMassInt.DelValue(5, 6);
 			myMassInt.info();
 
-			cout << "Программа успешно завершена!" << endl;
+			cout << "РџСЂРѕРіСЂР°РјРјР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°!" << endl;
 		}
 
 		cout << "-----" << endl;
@@ -243,9 +243,9 @@ void main()
 
 		//My123.myBuilding.
 
-		MyClassForBuilding* MyBuil = new MyClassForBuilding[6]; // Наши свободные объекты-здания
+		MyClassForBuilding* MyBuil = new MyClassForBuilding[6]; // РќР°С€Рё СЃРІРѕР±РѕРґРЅС‹Рµ РѕР±СЉРµРєС‚С‹-Р·РґР°РЅРёСЏ
 
-		MyMass<MyClassForBuilding> myMassBuild = MyMass<MyClassForBuilding>(); // Наш упорядоченный массив, в который мы эти объекты добавляем
+		MyMass<MyClassForBuilding> myMassBuild = MyMass<MyClassForBuilding>(); // РќР°С€ СѓРїРѕСЂСЏРґРѕС‡РµРЅРЅС‹Р№ РјР°СЃСЃРёРІ, РІ РєРѕС‚РѕСЂС‹Р№ РјС‹ СЌС‚Рё РѕР±СЉРµРєС‚С‹ РґРѕР±Р°РІР»СЏРµРј
 		{
 			myMassBuild.info();
 
@@ -260,22 +260,22 @@ void main()
 			}
 			myMassBuild.info();
 
-			// Удаляем по индексу
+			// РЈРґР°Р»СЏРµРј РїРѕ РёРЅРґРµРєСЃСѓ
 			myMassBuild.DelInd(0, 1);
 			myMassBuild.info();
 
-			// Удаляем по значению
+			// РЈРґР°Р»СЏРµРј РїРѕ Р·РЅР°С‡РµРЅРёСЋ
 			myMassBuild.DelValue(MyBuil[2], MyBuil[3]);
 			myMassBuild.info();
 
-			cout << "Программа успешно завершена!" << endl;
+			cout << "РџСЂРѕРіСЂР°РјРјР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°!" << endl;
 		}
 
 	}
 	catch (string msg)
 	{
 		cout << "-----" << endl;
-		cout << "Возникла ошибка, исполнение кода приостановлено! Подробности ошибки:" << endl;
+		cout << "Р’РѕР·РЅРёРєР»Р° РѕС€РёР±РєР°, РёСЃРїРѕР»РЅРµРЅРёРµ РєРѕРґР° РїСЂРёРѕСЃС‚Р°РЅРѕРІР»РµРЅРѕ! РџРѕРґСЂРѕР±РЅРѕСЃС‚Рё РѕС€РёР±РєРё:" << endl;
 		std::cout << msg << std::endl;
 		cout << "-----" << endl;
 	}

@@ -26,13 +26,13 @@ public:
 
 	void ShowAllAuthors()
 	{
-		cout << "Âûâîäèì âñåõ àâòîðîâ, êîòîðûå ó íàñ åñòü: " << endl;
+		cout << "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ Ð²ÑÐµÑ… Ð°Ð²Ñ‚Ð¾Ñ€Ð¾Ð², ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ñƒ Ð½Ð°Ñ ÐµÑÑ‚ÑŒ: " << endl;
 
 		for (set<Author>::iterator it = Authors.begin();
 			it != Authors.end();
 			it++)
 		{
-			cout << "Àâòîð ñ èìåíåì: {" << it->FIO << "}" << endl;
+			cout << "ÐÐ²Ñ‚Ð¾Ñ€ Ñ Ð¸Ð¼ÐµÐ½ÐµÐ¼: {" << it->FIO << "}" << endl;
 		}
 	}
 
