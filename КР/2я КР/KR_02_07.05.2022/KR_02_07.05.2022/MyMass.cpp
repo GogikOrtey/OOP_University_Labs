@@ -1,0 +1,1 @@
+#include "MyMass.h"

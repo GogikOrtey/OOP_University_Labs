@@ -1,0 +1,4 @@
+﻿  MyString.cpp
+D:\Рабочий стол\Учёба 2022\ООП\Практика\GeneralTask_01\GeneralTask_01\MyString.cpp(111): warning C4172: возвращение адреса локальной или временной переменной : simv3
+D:\Рабочий стол\Учёба 2022\ООП\Практика\GeneralTask_01\GeneralTask_01\MyString.cpp(89): warning C4172: возвращение адреса локальной или временной переменной : simv3
+  GeneralTask_01.vcxproj -> D:\Рабочий стол\Учёба 2022\ООП\Практика\GeneralTask_01\Debug\GeneralTask_01.exe
